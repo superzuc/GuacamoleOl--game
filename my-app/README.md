@@ -8,9 +8,7 @@ npm start
 -----------------------
 
 legenda = {
-    -> : tocca al giocatore dopo il giocatore attivo,
-    {} : salta il turno e scegli il giocatore che deve pescare,
-    <--> : cambio giro 
+    -> : tocca al giocatore dopo il giocatore attivo 
 }
 
 Questa è una versione di gioco del table-game "Guacamole Olè", se non sapete le regole basta guardare le istruzioni all'interno del sito: https://boardgamegeek.com/boardgame/341315/ole-guacamole
@@ -33,9 +31,7 @@ Buon gioco!
 ENG:
 
 Legend = {
--> : it's the next player's turn after the active player,
-{} : skip the turn and choose the player who must draw,
-<--> : change direction
+-> : it's the next player's turn after the active player
 }
 
 

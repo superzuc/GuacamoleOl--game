@@ -18,7 +18,7 @@ export default function DisplayData() {
     const [playersNumber, setPlayersNumber] = useState<number>(0);
     const [gameOn, setGameOn] = useState(false);
     const [gameFinished, setGameFinished] = useState(false);
-    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'Z', '->', '<-->', '{}'];
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'Z', '->'];
 
     useEffect(() => {
         let intervalloGenerale: NodeJS.Timeout | null = null;
