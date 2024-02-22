@@ -7,7 +7,7 @@ type Player = {
 
 export default function DisplayData() {
     const generalTimer = 15 * 60;
-    const turnDuration = 13; // Assumo che sia la durata di un turno in secondi
+    const turnDuration = 13; 
     const [players, setPlayers] = useState<Player[]>([]);
     const [playerNames, setPlayerNames] = useState<string[]>([]);
     const [playerAttivoIndex, setPlayerAttivoIndex] = useState(-1);
@@ -41,7 +41,7 @@ export default function DisplayData() {
                     if (prevTimer <= 1) {
                         clearInterval(intervalloTurno!);
                         setTurnoAttivo(false);
-                        return turnDuration; // Resetta il timer per il prossimo turno
+                        return turnDuration; 
                     }
                     return prevTimer - 1;
                 });
@@ -54,7 +54,6 @@ export default function DisplayData() {
     }, [turnoAttivo]);
 
     const handlePesca = () => {
-        // Assicurati che il gioco sia in corso e ci siano giocatori
         if (!gameOn || players.length === 0) return;
     
         setTurnoAttivo(true);
